@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Henrique — Desenvolvedor & IA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ CANVAS PARTICLES ═══════════════════════════ -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ═══════════════════════════ CURSOR ═══════════════════════════ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>PH<span class="logo-bracket">/&gt;</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#projetos" class="nav-link">Projetos</a></li>
+      <li><a href="#competencias" class="nav-link">Competências</a></li>
+      <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>Disponível para oportunidades
+      </div>
+
+      <div class="avatar-wrap reveal">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-circle">
+          <span class="avatar-initials">PH</span>
+        </div>
+      </div>
+
+      <h1 class="hero-name reveal">
+        Pedro<br /><span class="name-accent">Henrique</span>
+      </h1>
+
+      <p class="hero-title reveal">
+        <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+      </p>
+
+      <p class="hero-desc reveal">
+        Desenvolvedor em formação, com foco em tecnologia, inteligência artificial
+        e desenvolvimento web. Busco constantemente evoluir minhas habilidades e
+        aplicar meus conhecimentos em projetos digitais e soluções inovadoras.
+      </p>
+
+      <div class="hero-ctas reveal">
+        <a href="#projetos" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Ver Projetos
+        </a>
+        <a href="curriculo.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i> Baixar CV
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="mailto:12pedro1021@gmail.com" class="social-icon" title="E-mail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pedrohenriquesilvas" target="_blank" class="social-icon" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" class="social-icon" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-grid-lines"></div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SOBRE / FORMAÇÃO ═══════════════════════════ -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 — sobre</span>
+        <h2 class="section-title">Quem sou eu</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Formação</h3>
+          <ul class="about-list">
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>Ensino Médio</strong>
+                <p>Colégio Doutor Balduino José Décio</p>
+              </div>
+            </li>
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>Graduação em Inteligência Artificial</strong>
+                <p>CEUB — em andamento</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card glass reveal">
+          <div class="card-icon"><i class="fas fa-language"></i></div>
+          <h3>Idiomas</h3>
+          <ul class="about-list">
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>Português</strong><p>Nativo</p>
+              </div>
+            </li>
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>Inglês</strong><p>Intermediário — B2</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card glass reveal">
+          <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Contato</h3>
+          <ul class="about-list">
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>E-mail</strong>
+                <p><a href="mailto:12pedro1021@gmail.com">12pedro1021@gmail.com</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="list-dot"></span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p><a href="https://www.linkedin.com/in/pedrohenriquesilvas" target="_blank">pedrohenriquesilvas</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ HABILIDADES ═══════════════════════════ -->
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 — habilidades</span>
+        <h2 class="section-title">Stack Técnico</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item reveal" data-skill="HTML" data-value="80">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fab fa-html5"></i> HTML
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="CSS" data-value="75">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fab fa-css3-alt"></i> CSS
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="75"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="JavaScript" data-value="60">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fab fa-js"></i> JavaScript
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="60"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="Git/GitHub" data-value="65">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fab fa-github"></i> Git / GitHub
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="IA" data-value="70">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fas fa-brain"></i> Inteligência Artificial
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="70"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="Design" data-value="68">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fas fa-paint-brush"></i> Design Digital
+            </div>
+            <span class="skill-pct">68%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="68"></div>
+          </div>
+        </div>
+
+        <div class="skill-item reveal" data-skill="Organização" data-value="85">
+          <div class="skill-head">
+            <div class="skill-label">
+              <i class="fas fa-tasks"></i> Organização de Projetos
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-target="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJETOS ═══════════════════════════ -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 — projetos</span>
+        <h2 class="section-title">Trabalhos & Projetos</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal">
+          <div class="project-num">01</div>
+          <div class="project-icon"><i class="fas fa-code"></i></div>
+          <h3 class="project-title">Desenvolvimento Web</h3>
+          <p class="project-desc">
+            Criação de páginas modernas e simples utilizando HTML e CSS.
+            Estrutura responsiva com foco em experiência do usuário e boas práticas de desenvolvimento.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsivo</span>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-num">02</div>
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <h3 class="project-title">Inteligência Artificial</h3>
+          <p class="project-desc">
+            Uso de ferramentas de IA para criação de conteúdo digital.
+            Aplicação de automações inteligentes em fluxos de trabalho e produção criativa.
+          </p>
+          <div class="project-tags">
+            <span class="tag">IA</span>
+            <span class="tag">Automação</span>
+            <span class="tag">Conteúdo</span>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-num">03</div>
+          <div class="project-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3 class="project-title">Projetos de Planta</h3>
+          <p class="project-desc">
+            Desenvolvimento de plantas baixas digitais para ambientes residenciais.
+            Criação de layouts funcionais, modelagem 2D e 3D, com conceitos de arquitetura
+            e design de interiores.
+          </p>
+          <div class="project-tags">
+            <span class="tag">2D / 3D</span>
+            <span class="tag">Design</span>
+            <span class="tag">Arquitetura</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ COMPETÊNCIAS ═══════════════════════════ -->
+  <section class="section section-alt" id="competencias">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 — competências</span>
+        <h2 class="section-title">Soft Skills</h2>
+      </div>
+
+      <div class="comp-grid">
+        <div class="comp-card glass reveal">
+          <div class="comp-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Aprendizado Contínuo</h3>
+          <p>Autodidatismo e busca constante por novas habilidades e conhecimentos.</p>
+        </div>
+        <div class="comp-card glass reveal">
+          <div class="comp-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Pensamento Criativo</h3>
+          <p>Capacidade de propor soluções criativas e inovadoras para desafios digitais.</p>
+        </div>
+        <div class="comp-card glass reveal">
+          <div class="comp-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Empreendedorismo Digital</h3>
+          <p>Interesse em criar oportunidades e negócios no ambiente digital e tecnológico.</p>
+        </div>
+        <div class="comp-card glass reveal">
+          <div class="comp-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Adaptabilidade</h3>
+          <p>Capacidade de se adaptar rapidamente a novas tecnologias e contextos em evolução.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ OBJETIVOS ═══════════════════════════ -->
+  <section class="section" id="objetivos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 — objetivos</span>
+        <h2 class="section-title">Onde quero chegar</h2>
+      </div>
+
+      <div class="goals-list">
+        <div class="goal-item reveal">
+          <div class="goal-num">01</div>
+          <div class="goal-line"></div>
+          <div class="goal-content">
+            <i class="fas fa-laptop-code"></i>
+            <p>Consolidar carreira na área de tecnologia</p>
+          </div>
+        </div>
+        <div class="goal-item reveal">
+          <div class="goal-num">02</div>
+          <div class="goal-line"></div>
+          <div class="goal-content">
+            <i class="fas fa-project-diagram"></i>
+            <p>Desenvolver projetos próprios de impacto real</p>
+          </div>
+        </div>
+        <div class="goal-item reveal">
+          <div class="goal-num">03</div>
+          <div class="goal-line"></div>
+          <div class="goal-content">
+            <i class="fas fa-brain"></i>
+            <p>Atuar profissionalmente com inteligência artificial</p>
+          </div>
+        </div>
+        <div class="goal-item reveal">
+          <div class="goal-num">04</div>
+          <div class="goal-line"></div>
+          <div class="goal-content">
+            <i class="fas fa-globe"></i>
+            <p>Gerar oportunidades através do ambiente digital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ RECOMENDAÇÕES ═══════════════════════════ -->
+  <section class="section section-alt" id="recomendacoes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 — recomendações</span>
+        <h2 class="section-title">Depoimentos</h2>
+      </div>
+
+      <div class="rec-card glass reveal">
+        <div class="rec-icon"><i class="fas fa-quote-left"></i></div>
+        <p class="rec-text">
+          Espaço destinado para futuras recomendações de professores e colegas.
+        </p>
+        <div class="rec-placeholder">
+          <div class="placeholder-avatar"></div>
+          <div class="placeholder-avatar"></div>
+          <div class="placeholder-avatar"></div>
+          <span>Em breve…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTATO ═══════════════════════════ -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">07 — contato</span>
+        <h2 class="section-title">Vamos conversar</h2>
+      </div>
+
+      <div class="contact-block reveal">
+        <p class="contact-intro">
+          Aberto a oportunidades, parcerias e projetos interessantes.<br />
+          Entre em contato — responderei o mais breve possível.
+        </p>
+        <div class="contact-btns">
+          <a href="mailto:12pedro1021@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Enviar E-mail
+          </a>
+          <a href="https://www.linkedin.com/in/pedrohenriquesilvas" target="_blank" class="btn btn-outline">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://github.com/" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="curriculo.pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i> Currículo PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>PH<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Pedro Henrique. Feito com <i class="fas fa-heart"></i> e muito café.</p>
+      <div class="footer-socials">
+        <a href="mailto:12pedro1021@gmail.com" title="E-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/pedrohenriquesilvas" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
